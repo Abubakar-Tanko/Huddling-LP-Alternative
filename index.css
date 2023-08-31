@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'poppingsSB';
+    src: url(Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'openR';
+    src: url(Open_sans/static/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'openB';
+    src: url(Open_sans/static/OpenSans-Bold.ttf);
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 36px;
+    width: 484px;
+}
+h1, h2{
+    font-family: poppingsSB;
+}
+p{
+    font-family: openR;
+}
+section.one{
+    background-image: url(images/bg-hero-desktop.svg);
+    background-color: hsl(193, 100%, 96%);
+    background-size: contain;
+    padding: 50px;
+}
+section.one article#top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+section.one article#top div#right button{
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 1px 1px 5px hsl(208, 11%, 55%);
+}
+section.one article#top div#right button:hover{
+    color: hsl(208, 11%, 55%);
+    cursor: pointer;
+}
+section.one article.second{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+div.info{
+    width: 50%;
+}
+div.info p{
+    width: 397px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+section.two article.other p{
+    width: 384px;
+}
+section.one article.second div.info button{
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+}
+section.one article.second div.info button:hover{
+    background-color: hsla(322, 100%, 66%, 0.7);
+    cursor: pointer;
+}
+div.image{
+    width: 50%;
+}
+img{
+    width: 100%;
+}
+section.two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    margin-bottom: 200px;
+    padding-top: 100px;
+}
+section.two article{
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    padding: 40px 40px 40px 100px;
+    width: 1150px;
+    box-shadow: 1px -1px 5px hsl(208, 11%, 55%);
+    border-radius: 8px
+}
+section.two article p{
+    color: hsl(208, 11%, 55%);
+}
+section.two div#position{
+    position: absolute;
+    box-shadow: 0px -1px 5px hsl(208, 11%, 55%);
+    border-radius: 8px;
+    bottom: -268px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 60px;
+    background-color: white;
+    gap: 10px;
+}
+section.two div#position button{
+    padding: 20px 60px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 1px 1px 10px hsl(208, 11%, 55%);
+}
+section.two div#position button:hover{
+    background-color: hsla(322, 100%, 66%, 0.6);
+    cursor: pointer;
+}
+button{
+    margin-top: 20px;
+    font-family: poppingsSB;
+}
+footer{
+    background-color: hsl(192, 100%, 9%);
+    padding: 80px 60px;
+    font-size: 14px;
+    color: hsl(208, 11%, 55%);
+    font-family: openR;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+footer div.logo{
+    width: 150px;
+}
+footer span.logo{
+    display: block;
+    width: 12px;
+}
+footer span.logo img{
+    width: 100%;
+}
+footer div.flex{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+footer section#footer{
+    display: flex;
+    align-items: flex-start;
+    gap: 130px;
+}
+footer article#last{
+    display: flex;
+    gap: 140px;
+}
+section#footer article#form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer div.down{
+    display: flex;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 10px;
+}
+footer div.down ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+div.cop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+}
+div.cop p{
+    font-family: poppingsSB;
+    font-size: 11px;
+}
+ul#icon{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+ul#icon li{
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul#icon li:hover{
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    text-decoration: none;
+}
+p#lor{
+    width: 350px;
+}
+div#add{
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding-bottom: 30px;
+    font-family: poppingsSB;
+}
+div#add a{
+    font-size: 14px;
+    transition: 0.3s;
+}
+div#add a:hover{
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+@media screen and (max-width: 375px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 24px;
+        width: 300px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    section.two article p.para{
+        width: 248px;
+    }
+    section.two article p.pa{
+        width: 254px;
+    }
+    section.one{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-image: url(images/bg-hero-mobile.svg);
+    }
+    div.info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    div.info p{
+        width: 268px;
+    }
+    section.one article#top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    section.one article#top div#left{
+        width: 100px;
+    }
+    section.one article#top div#right button{
+        padding: 8px 15px;
+    }
+    section.one article.second{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    section.one article.second div.info button{
+        padding: 15px;
+        width: 200px;
+    }
+    section.two{
+        padding: 20px;
+    }
+    section.two article{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 80px 30px 20px 30px;
+        text-align: center;
+    }
+    section.two article div.info, div.image{
+        width: 100%;
+    }
+    section.two article.same{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    section.two div#position{
+        padding: 30px 25px;
+    }
+    section.two div#position h2{
+        font-size: 18px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 130px 10px 10px 20px;
+    }
+    p#lor{
+        width: 258px;
+    }
+    footer section#footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer section#footer article#last{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer section#footer article#last div.cop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px;
+    }
+    div.cop p{
+        font-size: 11px;
+        width: 250px;
+    }
+}
